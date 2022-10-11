@@ -20,12 +20,12 @@ public class ApiService {
 	
 	
 	public CountActivityCompleteAndMissingForm[] getCountActivityCompleteAndMissing(LocalDate date){
-		var response = restTemplate.getForObject("http://localhost:8081/datatask/countactivitycomplete?date={date}", CountActivityCompleteAndMissingForm[].class,date.toString());
+		var response = restTemplate.getForObject("http://192.168.1.104:8081/datatask/countactivitycomplete?date={date}", CountActivityCompleteAndMissingForm[].class,date.toString());
 	    return response;
 	}
 	
 	public CountActivityCompleteByPromoterForm[] getCountActivityCompleteAndMissingByPromoter(LocalDate date){
-		var response = restTemplate.getForObject("http://localhost:8081/datatask/countactivitycompletebypromoter?date={date}", CountActivityCompleteByPromoterForm[].class,date.toString());
+		var response = restTemplate.getForObject("http://192.168.1.104:8081/datatask/countactivitycompletebypromoter?date={date}", CountActivityCompleteByPromoterForm[].class,date.toString());
 	    return response;
 	}
 	

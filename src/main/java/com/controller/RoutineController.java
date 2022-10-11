@@ -51,7 +51,7 @@ public class RoutineController {
 	@Autowired
 	Html2ImageService html2ImageService;
 
-	@Scheduled(cron = "* 0 8 * * *")
+	@Scheduled(cron = "* * * * * *")
 	public void run() {
 		LocalDate date;
 		if(LocalDate.now().getDayOfWeek().equals(DayOfWeek.MONDAY)) {

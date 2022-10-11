@@ -17,9 +17,9 @@ public abstract class DriverFactory {
 	public DriverFactory() {
 		System.setProperty("webdriver.gecko.driver", "C:\\Users\\4P\\Documents\\DRIVER SELENIUM\\geckodriver.exe");
 		FirefoxOptions options = new FirefoxOptions();
-		ProfilesIni listProfiles = new ProfilesIni();
-		FirefoxProfile profile = listProfiles.getProfile("automacao");
-		options.setProfile(profile);
+		//ProfilesIni listProfiles = new ProfilesIni();
+		//FirefoxProfile profile = listProfiles.getProfile("luciene");
+		//options.setProfile(profile);
 		//options.addArguments("--headless");
 		this.driver = new FirefoxDriver(options);
 		this.driver.manage().window();
